@@ -1,0 +1,16 @@
+{
+    "Navbar": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "Home": {
+      "title": "Welcome to EventBrain",
+      "subtitle": "Manage your events easily and efficiently."
+    },
+    "Contact": {
+      "title": "Contact",
+      "description": "You can contact us usgin following form"
+    }
+  }
+  

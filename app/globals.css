@@ -1,0 +1,33 @@
+/* --- Import Tailwind utilities --- */
+@import "tailwindcss";
+
+/* --- Custom variant for dark mode --- */
+/* Allows selectors like &:where(.dark, .dark *) to apply dark styles */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* --- CSS Variables --- */
+:root {
+  /* Light theme variables */
+  --bg-main-light: #fcfcfc;        /* Main background for light mode */
+  --bg-high-light: #ffffff;        /* Card or elevated elements background */
+  --bg-highlight-light: #efefef;   /* Highlights / hover backgrounds */
+  --text-main-light: #474747;      /* Primary text color */
+  --color-light: #9eddff;          /* Primary accent color */
+  --color-high-light: #006aff;     /* Stronger accent color */
+  
+  /* Dark theme variables */
+  --bg-main-dark: #121212;         /* Main background for dark mode */
+  --bg-high-dark: #1e1e1e;         /* Card or elevated elements background */
+  --bg-highlight-dark: #ffffff1A;  /* Highlights / hover backgrounds */
+  --text-main-dark: #bbbbbb;       /* Primary text color */
+  --color-dark: #2c52a5;           /* Primary accent color */
+  --color-high-dark: #598dff;      /* Stronger accent color */
+
+  /* Color variables */
+  --red-main: #fb9494;
+  --red-focus: #c30909;
+  --green-main: #97e37a;
+  --green-focus: #358317;
+  --orange-main: #ffdb78;
+  --orange-focus: #9a7005;
+}

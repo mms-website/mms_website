@@ -39,7 +39,7 @@ export default async function RootLayout({
                 <Navbar />
 
                 {/* Main content */}
-                <main className="flex-1 mt-20 m-3">
+                <main className="flex-1">
                   {children}
                 </main>
 

@@ -1,0 +1,9 @@
+[
+  { "day": "monday", "morning": "Closed", "afternoon": "Closed" },
+  { "day": "tuesday", "morning": "09:00 - 12:00", "afternoon": "14:00 - 18:00" },
+  { "day": "wednesday", "morning": "09:00 - 12:00", "afternoon": "14:00 - 18:00" },
+  { "day": "thursday", "morning": "09:00 - 12:00", "afternoon": "14:00 - 18:00" },
+  { "day": "friday", "morning": "09:00 - 12:00", "afternoon": "14:00 - 18:00" },
+  { "day": "saturday", "morning": "09:00 - 12:00", "afternoon": "14:00 - 18:00" },
+  { "day": "sunday", "morning": "Closed", "afternoon": "Closed" }
+]

@@ -25,7 +25,23 @@ const Navbar = () => {
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact");
     if (!contactSection) return;
-    const yOffset = -10;
+    const yOffset = -80;
+    const y = contactSection.getBoundingClientRect().top + window.scrollY + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  };
+
+  const scrollToService = () => {
+    const contactSection = document.getElementById("service");
+    if (!contactSection) return;
+    const yOffset = -80;
+    const y = contactSection.getBoundingClientRect().top + window.scrollY + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  };
+
+  const scrollToTire = () => {
+    const contactSection = document.getElementById("tire");
+    if (!contactSection) return;
+    const yOffset = -80;
     const y = contactSection.getBoundingClientRect().top + window.scrollY + yOffset;
     window.scrollTo({ top: y, behavior: "smooth" });
   };
@@ -75,10 +91,14 @@ const Navbar = () => {
           flex justify-between items-center
           w-full max-w-[calc(100%-1.5rem)]
           mt-3 py-2 px-4 rounded-full shadow-2xl
-          bg-(--bg-main-light) dark:bg-(--bg-high-dark)
-          text-(--text-main-light) dark:text-(--text-main-dark)
+          
+          bg-white/00
+          backdrop-blur-md
+
+          text-(--text-main-dark)
         "
       >
+
 
         {/* LEFT SIDE */}
         {!collapsed ? (
@@ -89,6 +109,19 @@ const Navbar = () => {
             >
               {t('home')}
             </li>
+            <li
+              className="cursor-pointer relative after:block after:h-px after:w-full after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+              onClick={scrollToService}
+            >
+              {t('service')}
+            </li>
+            <li
+              className="cursor-pointer relative after:block after:h-px after:w-full after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+              onClick={scrollToTire}
+            >
+              {t('tire')}
+            </li>
+            <hr className="w-0 h-6 border border-solid border-l border-(--text-main-dark)" />
             <li
               className="cursor-pointer relative after:block after:h-px after:w-full after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
               onClick={scrollToContact}
@@ -109,7 +142,6 @@ const Navbar = () => {
         {/* RIGHT SIDE */}
         {!collapsed ? (
           <div className="flex justify-between items-center gap-3">
-            <hr className="w-0 h-7 border border-solid border-l border-(--text-main-light) dark:border-(--text-main-dark)" />
             <DarkModeToggler />
             <LanguageToggler />
           </div>
@@ -128,13 +160,25 @@ const Navbar = () => {
       {collapsed && openMenu && (
         <div
           ref={menuRef}
-          className="absolute top-16 left-3 bg-(--bg-main-light) dark:bg-(--bg-high-dark) rounded-xl shadow-xl p-2 flex flex-col"
+          className="absolute bg-white/00 backdrop-blur-md top-16 left-3 rounded-xl shadow-xl p-2 flex flex-col text-(--text-main-dark)"
         >
           <button
             onClick={scrollToTop}
             className="cursor-pointer after:block after:h-px after:w-full after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
           >
             {t('home')}
+          </button>
+          <button
+            onClick={scrollToService}
+            className="cursor-pointer after:block after:h-px after:w-full after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+          >
+            {t('service')}
+          </button>
+          <button
+            onClick={scrollToTire}
+            className="cursor-pointer after:block after:h-px after:w-full after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+          >
+            {t('tire')}
           </button>
           <button
             onClick={scrollToContact}
@@ -149,7 +193,7 @@ const Navbar = () => {
       {collapsed && openSettings && (
         <div
           ref={settingsRef}
-          className="absolute top-16 right-3 bg-(--bg-main-light) dark:bg-(--bg-high-dark) rounded-xl shadow-xl p-1.5 flex flex-col gap-1.5"
+          className="absolute top-16 right-3 bg-white/00 backdrop-blur-md rounded-xl shadow-xl p-1.5 flex flex-col gap-1.5"
         >
           <DarkModeToggler />
           <LanguageToggler />

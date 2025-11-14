@@ -53,7 +53,7 @@ export default function LanguageToggler() {
       {/* Bouton */}
       <button
         onClick={() => setOpen((o) => !o)}
-        className="flex cursor-pointer items-center gap-1 px-2 py-1 rounded-full bg-gray-950/5 text-gray-600 dark:bg-white/10 dark:text-gray-400"
+        className="flex cursor-pointer items-center gap-1 px-2 py-1 rounded-full bg-white/10 text-(--text-main-dark)"
       >
         <Globe className="w-4 h-4" />
         <span>{currentLocale}</span>
@@ -61,7 +61,7 @@ export default function LanguageToggler() {
 
       {/* Menu déroulant */}
       {open && (
-        <div className="absolute right-0 mt-3 rounded-md shadow bg-[#EFEFF0] p-0.75 text-gray-600 dark:bg-[#353535] dark:text-gray-400 border z-10">
+        <div className="absolute right-0 mt-3 rounded-md shadow bg-[#EFEFF0] p-0.75 text-gray-400 border z-10">
           {languages.map((lang) => (
             <button
               key={lang}

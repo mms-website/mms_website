@@ -1,16 +1,50 @@
 {
     "Navbar": {
       "home": "Accueil",
-      "about": "À propos",
-      "contact": "Contact"
+      "contact": "Contact",
+      "service": "Services",
+      "tire": "Pneus"
     },
     "Home": {
-      "title": "Bienvenue sur EventBrain",
-      "subtitle": "Gérez vos événements facilement et efficacement."
+      "title": "Missillac Marine Service",
+      "subtitle": "TOUS MATÉRIELS NAUTIQUES",
+      "description": "VENTE - RÉPARATION - NÉGOCE - ENTRETIEN"
+    },
+    "Tire": {
+      "title": "Pneus",
+      "description": "Montage de pneus"
     },
     "Contact": {
       "title": "Contact",
-      "description": "Vous pouvez nous contacter via le formulaire ci-dessous ou par email."
-    }
+      "subtitle": "Contactez-nous",
+      "warning": "Avant de nous contacter, n'hésitez pas à consulter nos horaires d'ouverture:",
+      "buttonLabel": "Voir nos horaires d'ouverture",
+      "description": "Nous sommes ravis de pouvoir vous accompagner pour tous vos projets nautiques ! Que vous soyez passionné de nautisme ou professionnel du secteur, notre équipe est là pour vous offrir des conseils personnalisés et des solutions sur mesure pour la vente, la réparation, le négoce et l’entretien de votre matériel nautique.",
+      "phone": "Tel",
+      "email": "eMail",
+      "address": "Adresse"
+    },
+      "OpeningHours": {
+        "title": "Horaires d'ouverture",
+        "description": "Consultez nos horaires pour venir nous rendre visite et contactez-nous:",
+        "buttonLabel": "Contactez-nous",
+        "monday": "Lundi",
+        "tuesday": "Mardi",
+        "wednesday": "Mercredi",
+        "thursday": "Jeudi",
+        "friday": "Vendredi",
+        "saturday": "Samedi",
+        "sunday": "Dimanche",
+        "close": "Fermer"
+    },
+      "Service": {
+        "title": "Service",
+        "description": "SALES – REPAIR – TRADE – MAINTENANCE",
+    
+        "sale": "Sales",
+        "repair": "Repair",
+        "trade": "Trade",
+        "maintenance": "Maintenance"
+      }    
   }
   

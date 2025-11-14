@@ -9,10 +9,10 @@
 :root {
   /* Light theme variables */
   --bg-main-light: #fcfcfc;        /* Main background for light mode */
-  --bg-high-light: #ffffff;        /* Card or elevated elements background */
+  --bg-high-light: #dedede;        /* Card or elevated elements background */
   --bg-highlight-light: #efefef;   /* Highlights / hover backgrounds */
   --text-main-light: #474747;      /* Primary text color */
-  --color-light: #9eddff;          /* Primary accent color */
+  --color-light: #0091ff;          /* Primary accent color */
   --color-high-light: #006aff;     /* Stronger accent color */
   
   /* Dark theme variables */
@@ -20,7 +20,7 @@
   --bg-high-dark: #1e1e1e;         /* Card or elevated elements background */
   --bg-highlight-dark: #ffffff1A;  /* Highlights / hover backgrounds */
   --text-main-dark: #bbbbbb;       /* Primary text color */
-  --color-dark: #2c52a5;           /* Primary accent color */
+  --color-dark: #3ba6f3;           /* Primary accent color */
   --color-high-dark: #598dff;      /* Stronger accent color */
 
   /* Color variables */

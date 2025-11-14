@@ -1,16 +1,44 @@
 {
-    "Navbar": {
-      "home": "Home",
-      "about": "About",
-      "contact": "Contact"
-    },
-    "Home": {
-      "title": "Welcome to EventBrain",
-      "subtitle": "Manage your events easily and efficiently."
-    },
-    "Contact": {
-      "title": "Contact",
-      "description": "You can contact us usgin following form"
-    }
+  "Navbar": {
+    "home": "Home",
+    "contact": "Contact",
+    "service": "Services",
+    "tire": "Tires"
+  },
+  "Home": {
+    "title": "Missillac Marine Service",
+    "subtitle": "ALL MARINE EQUIPMENT",
+    "description": "SALES - REPAIR - TRADING - MAINTENANCE"
+  },
+  "Service": {
+    "title": "Service",
+    "description": "SALES - REPAIR - TRADING - MAINTENANCE"
+  },
+  "Tire": {
+    "title": "Tires",
+    "description": "Tire installation"
+  },
+  "Contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch",
+    "warning": "Before contacting us, feel free to check our opening hours:",
+    "buttonLabel": "See opening hours",
+    "description": "We are delighted to assist you with all your marine projects! Whether you are passionate about boating or a professional in the sector, our team is here to provide personalized advice and tailored solutions for the sale, repair, trading, and maintenance of your marine equipment.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address"
+  },
+  "OpeningHours": {
+    "title": "Opening Hours",
+    "description": "Check our opening hours to visit us and get in touch:",
+    "buttonLabel": "Contact us",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "close": "Closed"
   }
-  
+}

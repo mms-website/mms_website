@@ -1,0 +1,42 @@
+[
+    {
+      "name": "Booking d’artistes",
+      "title": "Gestion & programmation",
+      "image": "/img/services/booking.jpg",
+      "location": "France / Europe",
+      "details": [
+        "Gestion professionnelle des tournées",
+        "Accompagnement artistique",
+        "Négociation & contractualisation"
+      ],
+      "syn": "Nous représentons un large panel d’artistes internationaux.",
+      "contact": "booking@monagence.com",
+      "video": "https://youtu.be/dQw4w9WgXcQ"
+    },
+    {
+      "name": "Production de concerts",
+      "title": "Organisation clé en main",
+      "image": "/img/services/production.jpg",
+      "details": [
+        "Régie technique complète",
+        "Accompagnement logistique",
+        "Coordination artistique"
+      ],
+      "syn": "Un service complet pour organiser vos événements musicaux.",
+      "poster": "/img/services/poster_production.jpg",
+      "contact": "prod@monagence.com"
+    },
+    {
+      "name": "Communication & promotion",
+      "title": "Marketing musical",
+      "image": "/img/services/communication.jpg",
+      "details": [
+        "Campagnes digitales",
+        "Relations presse",
+        "Création de contenu"
+      ],
+      "syn": "Une visibilité optimale pour vos artistes et événements.",
+      "contact": "com@monagence.com"
+    }
+  ]
+  

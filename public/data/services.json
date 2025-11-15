@@ -1,42 +1,96 @@
 [
-    {
-      "name": "Booking d’artistes",
-      "title": "Gestion & programmation",
-      "image": "/img/services/booking.jpg",
-      "location": "France / Europe",
-      "details": [
-        "Gestion professionnelle des tournées",
-        "Accompagnement artistique",
-        "Négociation & contractualisation"
-      ],
-      "syn": "Nous représentons un large panel d’artistes internationaux.",
-      "contact": "booking@monagence.com",
-      "video": "https://youtu.be/dQw4w9WgXcQ"
-    },
-    {
-      "name": "Production de concerts",
-      "title": "Organisation clé en main",
-      "image": "/img/services/production.jpg",
-      "details": [
-        "Régie technique complète",
-        "Accompagnement logistique",
-        "Coordination artistique"
-      ],
-      "syn": "Un service complet pour organiser vos événements musicaux.",
-      "poster": "/img/services/poster_production.jpg",
-      "contact": "prod@monagence.com"
-    },
-    {
-      "name": "Communication & promotion",
-      "title": "Marketing musical",
-      "image": "/img/services/communication.jpg",
-      "details": [
-        "Campagnes digitales",
-        "Relations presse",
-        "Création de contenu"
-      ],
-      "syn": "Une visibilité optimale pour vos artistes et événements.",
-      "contact": "com@monagence.com"
-    }
-  ]
+  {
+    "name": "Entretien Mécanique",
+    "title": "Maintenance & Diagnostic moteurs",
+    "image": "/img/mecanique.jpg",
+    "location": "France",
+    "details": [
+      "Entretien complet moteurs essence, diesel, hors-bord et in-bord",
+      "Diagnostics précis et réparation de pannes",
+      "Maintenance préventive pour améliorer la fiabilité",
+      "Optimisation des performances moteur"
+    ],
+    "syn": "Nos techniciens qualifiés assurent la fiabilité et la sécurité de votre embarcation grâce à un entretien rigoureux."
+  },
+
+  {
+    "name": "Transformation Intérieure",
+    "title": "Aménagement & Conception sur mesure",
+    "image": "/img/inter.jpg",
+    "details": [
+      "Personnalisation complète de l’intérieur de votre bateau",
+      "Modernisation des installations et équipements",
+      "Optimisation de l’espace selon vos besoins",
+      "Travaux sur mesure : mobilier, confort, finitions"
+    ],
+    "syn": "Nous réalisons des transformations intérieures élégantes et fonctionnelles adaptées à chaque embarcation."
+  },
+
+  {
+    "name": "Électricité & Électronique",
+    "title": "Installation & mise à niveau systèmes",
+    "image": "/img/elec.jpg",
+    "details": [
+      "Installation et réparation de systèmes électriques marins",
+      "Mise à niveau des équipements électroniques modernes",
+      "Sécurisation et optimisation des réseaux de bord",
+      "Intégration GPS, sondeurs, tableaux, domotique marine"
+    ],
+    "syn": "Notre équipe installe et modernise vos systèmes pour une navigation sécurisée, fiable et connectée."
+  },
+
+  {
+    "name": "Stratification & Traitement Osmotique",
+    "title": "Protection & rénovation coque",
+    "image": "/img/strat.jpg",
+    "details": [
+      "Réparation et renforcement des structures fibre et stratifiées",
+      "Traitement complet contre l’osmose",
+      "Protection durable de la coque",
+      "Interventions techniques certifiées"
+    ],
+    "syn": "Nous préservons l’intégrité et la longévité de votre coque grâce à des techniques avancées de traitement."
+  },
+
+  {
+    "name": "Peinture & Finition",
+    "title": "Esthétique & protection premium",
+    "image": "/img/paint.jpg",
+    "details": [
+      "Peinture marine professionnelle toutes surfaces",
+      "Rénovation esthétique de coque et superstructures",
+      "Application de produits haute qualité",
+      "Résultats brillants, durables et personnalisés"
+    ],
+    "syn": "Nous redonnons à votre bateau son éclat d’origine ou créons une finition entièrement personnalisée."
+  },
+
+  {
+    "name": "Transport de Bateaux",
+    "title": "Acheminement sécurisé à travers l'Europe",
+    "image": "/img/transport.jpg",
+    "details": [
+      "Transport de bateaux toutes tailles : voiliers, vedettes, semi-rigides",
+      "Acheminement routier spécialisé avec chauffeurs certifiés",
+      "Organisation complète des démarches administratives et itinéraires",
+      "Chargement, arrimage et déchargement en toute sécurité",
+      "Service porte-à-porte dans toute l’Europe"
+    ],
+    "syn": "Nous assurons le transport européen de votre bateau en toute sérénité grâce à des équipements adaptés et une équipe hautement qualifiée."
+  },
+
+  {
+    "name": "Montage de Pneus",
+    "title": "Service automobile rapide & professionnel",
+    "image": "/img/pneus.jpg",
+    "details": [
+      "Montage et démontage de pneus toutes marques",
+      "Équilibrage précis pour éliminer vibrations et usures prématurées",
+      "Contrôle visuel complet : pression, valves, état général",
+      "Service sur rendez-vous ou intervention rapide en atelier",
+      "Conseils personnalisés selon votre véhicule et votre style de conduite"
+    ],
+    "syn": "Un service de montage de pneus fiable, rapide et professionnel pour garantir votre sécurité sur la route."
+  }  
   
+]

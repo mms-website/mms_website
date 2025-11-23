@@ -5,12 +5,14 @@
     "image": "/img/mecanique.jpg",
     "location": "France",
     "details": [
-      "Entretien complet moteurs essence, diesel, hors-bord et in-bord",
-      "Diagnostics précis et réparation de pannes",
-      "Maintenance préventive pour améliorer la fiabilité",
-      "Optimisation des performances moteur"
+      "Entretien complet moteurs essence, diesel, hors-bord et in-bord : vidange, filtres, anodes, courroies, bougies",
+      "Diagnostics électroniques avancés : lecture codes défauts, tests capteurs, analyse paramètres moteur",
+      "Recherche de pannes mécaniques, électriques et hydrauliques",
+      "Maintenance préventive pour réduire les risques de panne en mer et améliorer la longévité",
+      "Réglage précis des performances moteur : injection, carburation, allumage",
+      "Contrôle complet du circuit de refroidissement, lubrification et échappement"
     ],
-    "syn": "Nos techniciens qualifiés assurent la fiabilité et la sécurité de votre embarcation grâce à un entretien rigoureux."
+    "syn": "Nos techniciens qualifiés assurent un entretien complet pour garantir fiabilité, performance et sécurité lors de toutes vos navigations."
   },
 
   {
@@ -18,12 +20,14 @@
     "title": "Aménagement & Conception sur mesure",
     "image": "/img/inter.jpg",
     "details": [
-      "Personnalisation complète de l’intérieur de votre bateau",
-      "Modernisation des installations et équipements",
-      "Optimisation de l’espace selon vos besoins",
-      "Travaux sur mesure : mobilier, confort, finitions"
+      "Conception et modélisation 3D de nouveaux aménagements intérieurs pour optimiser chaque espace",
+      "Fabrication sur mesure de mobilier marin : rangements, banquettes, placards, cuisines",
+      "Installation de nouveaux matériaux haut de gamme : planchers, revêtements muraux, sellerie",
+      "Modernisation des éclairages : LED marines, rubans, éclairages indirects",
+      "Optimisation ergonomique : circulation, utilisation de l’espace, solutions pratiques",
+      "Création d’ambiances personnalisées : classique, moderne, premium, nautique"
     ],
-    "syn": "Nous réalisons des transformations intérieures élégantes et fonctionnelles adaptées à chaque embarcation."
+    "syn": "Nous transformons l’intérieur de votre bateau en un espace confortable, esthétique et parfaitement adapté à vos besoins."
   },
 
   {
@@ -31,12 +35,14 @@
     "title": "Installation & mise à niveau systèmes",
     "image": "/img/elec.jpg",
     "details": [
-      "Installation et réparation de systèmes électriques marins",
-      "Mise à niveau des équipements électroniques modernes",
-      "Sécurisation et optimisation des réseaux de bord",
-      "Intégration GPS, sondeurs, tableaux, domotique marine"
+      "Installation et remise à niveau complète des réseaux électriques 12V, 24V et 230V",
+      "Intégration GPS, radars, sondeurs, VHF, AIS, systèmes de navigation complets",
+      "Remplacement ou modernisation des tableaux électriques et systèmes de protection",
+      "Installation de solutions énergétiques : batteries lithium, chargeurs, panneaux solaires",
+      "Contrôle et sécurisation des câblages, connexions, fusibles et dispositifs de coupure",
+      "Mise en place de solutions de domotique marine : éclairages, contrôles à distance, capteurs"
     ],
-    "syn": "Notre équipe installe et modernise vos systèmes pour une navigation sécurisée, fiable et connectée."
+    "syn": "Nous modernisons et sécurisons vos systèmes électriques et électroniques pour une navigation connectée, fiable et intuitive."
   },
 
   {
@@ -44,12 +50,14 @@
     "title": "Protection & rénovation coque",
     "image": "/img/strat.jpg",
     "details": [
-      "Réparation et renforcement des structures fibre et stratifiées",
-      "Traitement complet contre l’osmose",
-      "Protection durable de la coque",
-      "Interventions techniques certifiées"
+      "Réparation de structures en fibre de verre, carbone et matériaux composites",
+      "Renforcement des zones sensibles : varangues, fonds, cloisons, tableaux arrière",
+      "Traitement complet de l’osmose : décapage, séchage contrôlé, résines époxy, barrières",
+      "Remise en état du gelcoat : reprises, polish, application haute finition",
+      "Protection durable contre l’humidité, la corrosion et les microfissures",
+      "Inspection technique de coque avec mesure d’humidité et rapport de diagnostic"
     ],
-    "syn": "Nous préservons l’intégrité et la longévité de votre coque grâce à des techniques avancées de traitement."
+    "syn": "Nous protégeons durablement votre coque grâce à des techniques professionnelles garantissant résistance et longévité."
   },
 
   {
@@ -57,12 +65,14 @@
     "title": "Esthétique & protection premium",
     "image": "/img/paint.jpg",
     "details": [
-      "Peinture marine professionnelle toutes surfaces",
-      "Rénovation esthétique de coque et superstructures",
-      "Application de produits haute qualité",
-      "Résultats brillants, durables et personnalisés"
+      "Peinture marine professionnelle toutes surfaces : coque, pont, superstructures",
+      "Application de systèmes haute performance (polyuréthane, époxy, Awlgrip…)",
+      "Rénovation esthétique : suppressions rayures, éclats, reprises gelcoat",
+      "Finitions personnalisées : couleurs sur mesure, bandes décoratives, numéros",
+      "Application de vernis marins haute durabilité pour bois et surfaces sensibles",
+      "Traitements protecteurs antifouling pour préserver les performances en navigation"
     ],
-    "syn": "Nous redonnons à votre bateau son éclat d’origine ou créons une finition entièrement personnalisée."
+    "syn": "Nous redonnons à votre bateau un aspect neuf et une protection durable grâce à nos finitions marines haut de gamme."
   },
 
   {
@@ -70,13 +80,14 @@
     "title": "Acheminement sécurisé à travers l'Europe",
     "image": "/img/transport.jpg",
     "details": [
-      "Transport de bateaux toutes tailles : voiliers, vedettes, semi-rigides",
-      "Acheminement routier spécialisé avec chauffeurs certifiés",
-      "Organisation complète des démarches administratives et itinéraires",
-      "Chargement, arrimage et déchargement en toute sécurité",
-      "Service porte-à-porte dans toute l’Europe"
+      "Transport de bateaux toutes tailles : voiliers, multicoques, vedettes, semi-rigides",
+      "Manutention professionnelle : chargement, levage, arrimage, protections",
+      "Transport routier spécialisé avec chauffeurs certifiés et matériel adapté",
+      "Gestion complète des documents : autorisations, assurances, itinéraires, escortes",
+      "Service porte-à-porte disponibles partout en Europe",
+      "Suivi du transport en temps réel pour une totale tranquillité"
     ],
-    "syn": "Nous assurons le transport européen de votre bateau en toute sérénité grâce à des équipements adaptés et une équipe hautement qualifiée."
+    "syn": "Nous garantissons un transport fiable, organisé et sécurisé, grâce à des équipements spécialisés et une équipe expérimentée."
   },
 
   {
@@ -84,13 +95,13 @@
     "title": "Service automobile rapide & professionnel",
     "image": "/img/pneus.jpg",
     "details": [
-      "Montage et démontage de pneus toutes marques",
-      "Équilibrage précis pour éliminer vibrations et usures prématurées",
-      "Contrôle visuel complet : pression, valves, état général",
-      "Service sur rendez-vous ou intervention rapide en atelier",
-      "Conseils personnalisés selon votre véhicule et votre style de conduite"
+      "Montage et démontage de pneus toutes marques et toutes dimensions",
+      "Équilibrage de haute précision pour éliminer vibrations et usure anormale",
+      "Contrôle complet : pression, usure, valves, état des jantes",
+      "Changement de pneus été / hiver avec conseils personnalisés",
+      "Service rapide sur rendez-vous ou en atelier, sans attente excessive",
+      "Possibilité de stockage des pneus selon la saison"
     ],
-    "syn": "Un service de montage de pneus fiable, rapide et professionnel pour garantir votre sécurité sur la route."
-  }  
-  
+    "syn": "Notre atelier offre un service rapide, fiable et sécurisé pour remplacer vos pneus en toute confiance."
+  }
 ]

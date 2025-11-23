@@ -11,11 +11,24 @@
     "description": "SALES - REPAIR - TRADING - MAINTENANCE"
   },
   "Service": {
-    "title": "Service",
+    "title": "SERVICES",
     "description": "SALES - REPAIR - TRADING - MAINTENANCE"
   },
+  "Transport": {
+    "title": "TRANSPORT",
+    "description": "Boat transport",
+    "subtitle": "Reliable, safe & efficient boat moving",
+    "longDescription": "We handle the full logistics of transporting your boat, ensuring safety, precision, and compliance with all regulations. Whether you need to move it across the region or across the country, our specialized equipment and experienced team guarantee the best conditions.",
+    "advantages": [
+      "Specialized marine transport equipment",
+      "National and international routes",
+      "Insurance options included",
+      "Professional handling and safety procedures"
+    ],
+    "cta": "Request a transport quote"
+  },
   "Tire": {
-    "title": "Tires",
+    "title": "TIRES",
     "description": "Tire installation"
   },
   "Contact": {
@@ -29,7 +42,7 @@
     "address": "Address"
   },
   "OpeningHours": {
-    "title": "Opening Hours",
+    "title": "OPENING HOURS",
     "description": "Check our opening hours to visit us and get in touch:",
     "buttonLabel": "Contact us",
     "monday": "Monday",

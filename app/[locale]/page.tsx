@@ -5,59 +5,43 @@ import ContactPage from './contact/page';
 import HomePage from './home/page';
 import OpeningHoursPage from './openingHours/page';
 import ServicePage from './service/page';
-import TirePage from './tire/page';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import TransportPage from './transport/page';
 
 export default function Main() {
 
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-    });
   }, []);
 
   return (
-    <div className="bg-(--bg-main-light) dark:bg-(--bg-main-dark) text-(--text-main-light) dark:text-(--text-main-dark) flex flex-col gap-8">
-      {/* Section Home */}
-      <div 
-        id="home"
-      >
-        <HomePage />
-      </div>
+    <div className="relative flex flex-col text-(--text-main-light) dark:text-(--text-main-dark)">
 
-      {/* Section Service */}
-      <div 
-        id="service"
-        data-aos="fade-left"
-      >
-        <ServicePage />
-      </div>
+      {/* Sections */}
+      <div className="relative z-10 bg-transparent">
 
-      {/* Section Pneus */}
-      <div 
-        id="tire"
-        data-aos="fade-left"
-      >
-        <TirePage />
-      </div>
+        {/* Section Home */}
+        <div id="home">
+          <HomePage />
+        </div>
 
-      {/* Section Contact */}
-      <div 
-        id="contact"
-        data-aos="fade-left"
-      >
-        <ContactPage />
-      </div>
+        {/* Section Service */}
+        <div id="service">
+          <ServicePage />
+        </div>
 
-      {/* Section OpeningHours */}
-      <div 
-        id="openingHours"
-        data-aos="fade-left"
-      >
-        <OpeningHoursPage />
-      </div>
+        <div id="transport">
+          <TransportPage />
+        </div>
 
+        {/* Section Contact */}
+        <div id="contact">
+          <ContactPage />
+        </div>
+
+        {/* Section OpeningHours */}
+        <div id="openingHours">
+          <OpeningHoursPage />
+        </div>
+      </div>
     </div>
   );
 }

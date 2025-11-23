@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-(--bg-main-light) dark:bg-(--bg-high-dark) text-(--text-main-light) dark:text-(--text-main-dark) py-6 px-4 mt-10 shadow-inner rounded-t-lg">
+    <footer className="w-full bg-(--blue-main) text-(--text-main-light) py-6 px-4 shadow-inner z-50">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         {/* Left section */}
         <div className="text-sm">

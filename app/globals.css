@@ -5,21 +5,65 @@
 /* Allows selectors like &:where(.dark, .dark *) to apply dark styles */
 @custom-variant dark (&:where(.dark, .dark *));
 
+@font-face {
+  font-family: 'SonderRegular';
+  src: url('/font/Kenflog.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WinkySans';
+  src: url('/font/WinkySans-VariableFont_wghttotf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-myfont {
+  font-family: 'SonderRegular', sans-serif;
+}
+
+.winkysans {
+  font-family: 'WinkySans', sans-serif;
+}
+
+.hollow-text {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-main-dark);
+}
+
+.hollow-text-dark {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-main-light);
+}
+
+.hollow-text-big {
+  color: transparent;
+  -webkit-text-stroke: 2.3px var(--text-main-dark);
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
 /* --- CSS Variables --- */
 :root {
   /* Light theme variables */
   --bg-main-light: #fcfcfc;        /* Main background for light mode */
   --bg-high-light: #dedede;        /* Card or elevated elements background */
   --bg-highlight-light: #efefef;   /* Highlights / hover backgrounds */
-  --text-main-light: #474747;      /* Primary text color */
+  --text-main-light: #575656;      /* Primary text color */
   --color-light: #0091ff;          /* Primary accent color */
   --color-high-light: #006aff;     /* Stronger accent color */
   
   /* Dark theme variables */
-  --bg-main-dark: #121212;         /* Main background for dark mode */
+  --bg-main-dark: #2a2a2a;         /* Main background for dark mode */
   --bg-high-dark: #1e1e1e;         /* Card or elevated elements background */
   --bg-highlight-dark: #ffffff1A;  /* Highlights / hover backgrounds */
-  --text-main-dark: #bbbbbb;       /* Primary text color */
+  --text-main-dark: #d9d9d9;       /* Primary text color d9d9d9 */
   --color-dark: #3ba6f3;           /* Primary accent color */
   --color-high-dark: #598dff;      /* Stronger accent color */
 
@@ -30,4 +74,8 @@
   --green-focus: #358317;
   --orange-main: #ffdb78;
   --orange-focus: #9a7005;
+  --yellow-main: #FFC719;
+  --yellow-focus: #8f6f10;
+  --white-main: #ffffff;
+  --blue-main: #207c9d;
 }

@@ -11,10 +11,8 @@ import { useTranslations } from "next-intl";
 
 const RosterPage = () => {
   const [modalIndex, setModalIndex] = useState<number | null>(null);
-
   const t = useTranslations("Service");
 
-  // AOS
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -23,142 +21,173 @@ const RosterPage = () => {
   const closeModal = () => setModalIndex(null);
 
   return (
-    <main className="mx-3 flex flex-col gap-8 rounded-lg shadow-2xl bg-(--bg-main-light) dark:bg-(--bg-high-dark) text-(--text-main-light) dark:text-(--text-main-dark)">
-      <div className="relative w-full text-center text-white pb-5 overflow-hidden">
-        <div className="relative z-10">
-          <h1 className="text-3xl font-bold text-left pl-4 py-4 text-(--text-main-light) dark:text-(--text-main-dark)">
-            {t("title")}
-          </h1>
-          <p className="text-justify px-4 text-(--text-main-light) dark:text-(--text-main-dark)">Bienvenue chez MISSILLAC MARINE SERVICE, votre partenaire de confiance pour tous les besoins liés à votre embarcation. Notre chantier naval, fort d'une expertise reconnue, vous propose une gamme exhaustive de services spécialisés pour assurer la performance et la longévité de votre bateau.</p>
-          {/* Cards */}
-          <div
+    <main className="relative flex flex-col gap-8 shadow-2xl z-50">
+
+      {/* WRAPPER QUI CONFINERA LE BACKGROUND À CETTE PAGE */}
+      <section className="relative w-full min-h-screen overflow-hidden">
+
+        {/* 🌄 BACKGROUND UNIQUEMENT POUR CETTE PAGE */}
+        <div className="absolute inset-0 bg-[url('/img/service.jpg')] bg-cover bg-center bg-fixed -z-20" /> {/* bg-[url('/img/service.jpg')] bg-cover bg-center bg-fixed */}
+
+        {/* 🌫️ FILTRE */}
+        <div className="absolute inset-0 -z-10" />
+
+        {/* --- CONTENU --- */}
+        <div className="relative z-10 w-full text-center pb-5 px-50">
+          <h1
             className="
-              grid gap-8
-              grid-cols-1
-              sm:grid-cols-2
-              md:grid-cols-3
-              xl:grid-cols-4
-              2xl:grid-cols-5
-              justify-center
-              m-4
+              text-7xl font-bold font-myfont 
+              hollow-text
+              text-center 
+              py-5
+              tracking-widest
             "
           >
-            {services.map((artist, index) => (
+            {t("title")}
+          </h1>
+
+          {/* Cards */}
+          <div className="grid gap-8 place-items-center grid-cols-[repeat(auto-fit,minmax(320px,1fr))] m-4">
+            {services.map((service, index) => (
               <div
                 key={index}
                 data-aos="flip-left"
-                className="relative w-full max-w-xs h-[360px] mx-auto group perspective-[1000px] cursor-pointer"
+                className="relative w-full max-w-xs h-[380px] mx-auto group cursor-pointer"
                 onClick={() => openModal(index)}
               >
                 <div
-                  className="transition-transform duration-200 ease-out transform rounded-lg w-full h-full shadow-lg"
-                  style={{
-                    boxShadow:
-                      "0 8px 20px rgba(0,0,0,0.7), 0 15px 25px rgba(30, 58, 138, 0.4)",
-                  }}
+                  className="
+                    relative w-full h-[380px] rounded-3xl p-1 
+                    bg-black/5 backdrop-blur-xs
+                    border border-white/20 shadow-[0_8px_30px_rgb(0,0,0,0.2)]
+                    group-hover:shadow-[0_12px_40px_rgb(0,0,0,0.35)]
+                    transition-all duration-300 group-hover:scale-[1.03]
+                  "
                 >
-                  <div className="relative w-full h-[320px] rounded-lg overflow-hidden">
+                  {/* IMG */}
+                  <div className="relative w-full h-64 rounded-2xl overflow-hidden">
                     <Image
-                      src={artist.image}
-                      alt={artist.name}
+                      src={service.image}
+                      alt={service.name}
                       fill
-                      className="object-cover rounded-lg"
+                      className="
+                        object-cover transition-all duration-500
+                        group-hover:scale-110
+                      "
                     />
-
-                    {/* FILTRE NOIR */}
-                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all"></div>
+                    <div className="absolute inset-0 bg-linear-to-b" />
                   </div>
 
-                  {/* Bandeau avec dégradé cuivre → noir */}
+                  {/* ---- OVERLAY ANIMÉ ---- */}
                   <div
                     className="
-                      absolute bottom-0 w-full rounded-b-lg px-4 py-4 
-                      backdrop-blur-sm 
-                      bg-gradient-to-t 
-                      from-[#5c3b21]/90 
-                      to-[#1a1a1a]/50
-                      group-hover:from-[#6d4728]/95
-                      group-hover:to-[#1a1a1a]/60
-                      transition
+                      absolute bottom-0 left-0 right-0
+                      h-0 group-hover:h-full
+                      bg-black/60 backdrop-blur-md
+                      flex flex-col items-center justify-center
+                      text-center px-4
+                      rounded-3xl
+                      opacity-0 group-hover:opacity-100
+                      transition-all duration-500 ease-out
+                      overflow-hidden
                     "
                   >
-                    <h3 className="text-xl font-semibold text-white drop-shadow-md">
-                      {artist.name}
+                    <h3 className="text-xl font-bold text-(--text-main-dark) tracking-wide">
+                      {service.name}
                     </h3>
-                    <p className="text-sm font-black text-[#f0d2b5] drop-shadow-md">
-                      {artist.title}
+                    <p className="text-sm text-(--text-main-dark) font-semibold mt-2">
+                      {service.title}
                     </p>
+
+                    <CirclePlus
+                      className="
+                        mt-4 w-12 h-12 p-3
+                        bg-(--text-main-dark) text-(--text-main-light)
+                        rounded-full shadow-lg
+                        hover:bg-[#6d4728]
+                        transition-all duration-300
+                      "
+                    />
                   </div>
 
-                  {/* CirclePlus Button */}
-                  <div className="absolute bottom-4 right-4">
-                    <CirclePlus className="w-10 h-10 p-2 bg-[#5c3b21] text-white rounded-full shadow-lg hover:bg-[#6d4728] hover:scale-110 transition-transform duration-200 cursor-pointer" />
+                  {/* ---- Texte visible avant le hover ---- */}
+                  <div className="flex items-center justify-between px-4 py-4 group-hover:opacity-0 transition-opacity duration-300">
+                    <div className="flex flex-col text-left">
+                      <h3 className="text-xl font-bold text-(--text-main-dark)">
+                        {service.name}
+                      </h3>
+                      <p className="text-sm text-(--text-main-dark) opacity-90 mt-1">
+                        {service.title}
+                      </p>
+                    </div>
+
+                    <CirclePlus
+                      className="
+                        w-10 h-10 p-2 ml-4
+                        bg-(--text-main-dark) text-(--text-main-light)
+                        rounded-full shadow-lg
+                        hover:bg-[#6d4728]
+                        transition-all duration-300
+                        shrink-0
+                      "
+                    />
                   </div>
                 </div>
               </div>
             ))}
           </div>
-        </div>
 
-        {/* Modal */}
-        {modalIndex !== null && (
-          <Modal>
-            <div
-              className="fixed inset-0 bg-black/40 backdrop-blur-md z-[999] flex justify-center items-center p-4"
-              onClick={closeModal}
-            >
+          {/* MODAL */}
+          {modalIndex !== null && (
+            <Modal>
               <div
-                className="relative bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl p-6 max-w-4xl w-full rounded-2xl overflow-y-auto max-h-[90vh] transition-all"
-                onClick={(e) => e.stopPropagation()}
+                className="fixed inset-0 bg-black/40 backdrop-blur-md z-50 flex justify-center items-center p-4"
+                onClick={closeModal}
               >
-                <button className="absolute top-4 right-4" onClick={closeModal}>
-                  <X className="text-white hover:text-[#f0d2b5] transition" />
-                </button>
+                <div
+                  className="relative bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl p-6 max-w-4xl w-full rounded-2xl max-h-[90vh] overflow-y-auto"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <button className="absolute top-4 right-4" onClick={closeModal}>
+                    <X className="text-(--text-main-dark) hover:text-(--text-high-light)" />
+                  </button>
 
-                {(() => {
-                  const artist = services[modalIndex];
-                  return (
-                    <div className="flex flex-col lg:flex-row gap-6 text-left text-white">
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-bold">{artist.name}</h3>
-                        {artist.title && (
-                          <p className="mb-2 text-[#f0d2b5]">{artist.title}</p>
-                        )}
-                        {artist.location && (
-                          <p className="text-sm text-[#d1bfa7] italic mb-2">
-                            {artist.location}
-                          </p>
-                        )}
+                  {(() => {
+                    const service = services[modalIndex];
+                    return (
+                      <div className="flex flex-col lg:flex-row gap-6 text-(--text-main-dark)">
+                        <div className="flex-1">
+                          <h3 className="text-2xl font-bold">{service.name}</h3>
 
-                        {artist.details?.map((detail: string, i: number) => (
-                          <p key={i} className="mt-4 leading-relaxed">
-                            {detail}
-                          </p>
-                        ))}
+                          {service.title && (
+                            <p className="text-(--text-main-dark) mb-2">{service.title}</p>
+                          )}
 
-                        {artist.syn && (
-                          <p className="mt-4 text-[#f0d2b5] italic text-sm">
-                            {artist.syn}
-                          </p>
-                        )}
+                          {service.details?.map((detail: string, i: number) => (
+                            <p key={i} className="mt-4">
+                              {detail}
+                            </p>
+                          ))}
 
-                        <div className="text-center mt-6">
-                          <button
-                            onClick={closeModal}
-                            className="px-6 py-2 bg-[#5c3b21]/70 backdrop-blur-md text-white rounded-xl hover:bg-[#6d4728]/80 transition"
-                          >
-                            Fermer
-                          </button>
+                          <div className="text-center mt-6">
+                            <button
+                              onClick={closeModal}
+                              className="px-6 py-2 bg-(--text-main-dark) text-(--text-main-light) rounded-xl hover:bg-(--text-main-light) hover:text-(--text-main-dark) cursor-pointer transition-all duration-75"
+                            >
+                              Fermer
+                            </button>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  );
-                })()}
+                    );
+                  })()}
+                </div>
               </div>
-            </div>
-          </Modal>
-        )}
-      </div>
+            </Modal>
+          )}
+
+        </div>
+      </section>
     </main>
   );
 };

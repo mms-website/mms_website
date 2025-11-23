@@ -2,8 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 interface TransportSection {
+  id: string;
   title: string;
   subtitle: string;
   description: string;
@@ -11,9 +13,6 @@ interface TransportSection {
   image: string;
 }
 
-/* ──────────────────────────────────────────────── */
-/*   LIGNE VERTICALE ANIMÉE AU CENTRE DE L'ÉCRAN   */
-/* ──────────────────────────────────────────────── */
 const VerticalLine = () => {
   const [lineHeight, setLineHeight] = useState(0);
 
@@ -21,14 +20,8 @@ const VerticalLine = () => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const docHeight = document.body.scrollHeight - window.innerHeight;
-
-      // Progression du scroll entre 0 et 1
       const progress = Math.min(scrollTop / docHeight, 1);
-
-      // Hauteur max = 80% de l'écran
       const maxHeight = window.innerHeight * 0.8;
-
-      // Hauteur réelle de la ligne
       setLineHeight(maxHeight * progress);
     };
 
@@ -37,37 +30,29 @@ const VerticalLine = () => {
   }, []);
 
   return (
-<div
-  style={{
-    height: `${lineHeight}px`,
-  }}
-  className="
-    fixed top-0 left-1/2 -translate-x-1/2
-    w-0.5
-    bg-(--blue-main)
-    z-10
-    transition-all duration-75 ease-linear
-  "
-></div>
+    <div
+      style={{ height: `${lineHeight}px` }}
+      className="fixed top-0 left-1/2 -translate-x-1/2 w-0.5 bg-(--blue-main) z-10 transition-all duration-75 ease-linear"
+    ></div>
   );
 };
 
-/* ──────────────────────────────────────────────── */
-/*                     PAGE                         */
-/* ──────────────────────────────────────────────── */
 const TransportPage = () => {
+  const pathname = usePathname();
   const [sections, setSections] = useState<TransportSection[]>([]);
 
+  // Détecte la langue dans l’URL
+  const locale = pathname?.split("/")[1] || "en";
+
   useEffect(() => {
-    fetch('/data/transport.json')
+    fetch(`/data/${locale}/transport.json`)
       .then((res) => res.json())
-      .then((data) => setSections(data));
-  }, []);
+      .then((data) => setSections(data))
+      .catch(() => setSections([]));
+  }, [locale]);
 
   return (
     <main className="w-full flex flex-col items-center bg-(--bg-main-light) dark:bg-(--bg-high-dark)">
-
-      {/* Ligne centrale */}
       <VerticalLine />
 
       {sections.map((item, index) => {
@@ -75,51 +60,22 @@ const TransportPage = () => {
 
         return (
           <section
-            key={index}
-            className={`
-              relative flex gap-12 items-start p-8
-              w-2/3
-              text-(--text-main-light) dark:text-(--text-main-dark)
-              ${reverse ? 'flex-row-reverse' : ''}
-            `}
+            key={item.id}
+            id={item.id}
+            className={`relative flex gap-12 items-start p-8 w-2/3 text-(--text-main-light) dark:text-(--text-main-dark) ${reverse ? 'flex-row-reverse' : ''}`}
           >
-
-            {/* IMAGE */}
             <div className="w-1/2 relative h-[450px] rounded-xl overflow-hidden shadow-xl">
-              <Image
-                src={item.image}
-                alt={item.title}
-                fill
-                className="object-cover"
-              />
+              <Image src={item.image} alt={item.title} fill className="object-cover" />
             </div>
 
-            {/* TEXTE */}
-            <div
-              className={`
-                w-1/2 relative flex flex-col gap-6
-                ${reverse ? 'items-end text-right' : 'items-start text-left'}
-              `}
-            >
-              {/* TITRE SUR L’IMAGE */}
-              <h1
-                className={`
-                  absolute top-0 ${reverse ? 'translate-x-1/2' : '-translate-x-1/2'} 
-                  text-5xl font-bold font-myfont drop-shadow-xl tracking-wide mt-7 hollow-text-dark
-                  z-10
-                `}
-              >
+            <div className={`w-1/2 relative flex flex-col gap-6 ${reverse ? 'items-end text-right' : 'items-start text-left'}`}>
+              <h1 className={`absolute top-0 ${reverse ? 'translate-x-1/2' : '-translate-x-1/2'} text-5xl font-bold font-myfont drop-shadow-xl tracking-wide mt-7 hollow-text-dark z-10`}>
                 {item.title}
               </h1>
 
               <div className="mt-25">
-                <h2 className="text-xl font-semibold opacity-80">
-                  {item.subtitle}
-                </h2>
-
-                <p className="text-lg leading-relaxed">
-                  {item.description}
-                </p>
+                <h2 className="text-xl font-semibold opacity-80">{item.subtitle}</h2>
+                <p className="text-lg leading-relaxed">{item.description}</p>
 
                 <ul className="mt-2 space-y-2">
                   {item.advantages.map((adv, i) => (
@@ -131,11 +87,9 @@ const TransportPage = () => {
                 </ul>
               </div>
             </div>
-
           </section>
         );
       })}
-
     </main>
   );
 };

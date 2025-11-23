@@ -1,0 +1,30 @@
+[
+  {
+    "id": "transport",
+    "title": "Transport",
+    "subtitle": "Reliable, safe & efficient boat moving",
+    "description": "Boat transport",
+    "longDescription": "We handle the full logistics of transporting your boat, ensuring safety, precision, and compliance with all regulations. Whether you need to move it across the region or across the country, our specialized equipment and experienced team guarantee the best conditions.",
+    "advantages": [
+      "Specialized marine transport equipment",
+      "National and international routes",
+      "Insurance options included",
+      "Professional handling and safety procedures"
+    ],
+    "image": "/img/trans.jpg"
+  },
+  {
+    "id": "tire",
+    "title": "Tire mounting",
+    "subtitle": "Fast, safe & professional tire installation",
+    "description": "Premium tire mounting service",
+    "longDescription": "We provide expert tire mounting for all types of vehicles. Our team uses professional-grade tools and follows strict safety procedures to ensure optimal performance and maximum durability for your tires.",
+    "advantages": [
+      "High-precision mounting machines",
+      "Balancing included",
+      "Compatible with all tire brands",
+      "Quick service with guaranteed safety"
+    ],
+    "image": "/img/tire.jpg"
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Mechanical Maintenance",
+    "title": "Engine Maintenance & Diagnostics",
+    "image": "/img/mecanique.jpg",
+    "location": "France",
+    "details": [
+      "Complete maintenance of gasoline, diesel, outboard, and inboard engines: oil change, filters, anodes, belts, spark plugs",
+      "Advanced electronic diagnostics: error code reading, sensor tests, parameter analysis",
+      "Mechanical, electrical, and hydraulic troubleshooting",
+      "Preventive maintenance to reduce breakdown risks and improve longevity",
+      "Precise performance adjustments: injection, carburation, ignition",
+      "Full inspection of cooling, lubrication, and exhaust systems"
+    ],
+    "syn": "Our qualified technicians ensure complete maintenance to guarantee reliability, performance, and safety for all your navigation needs."
+  },
+  {
+    "name": "Interior Transformation",
+    "title": "Custom Interior Design & Layout",
+    "image": "/img/inter.jpg",
+    "details": [
+      "3D design and modeling of new interior layouts to optimize space",
+      "Custom marine furniture fabrication: storage, benches, cabinets, kitchens",
+      "Installation of high-end materials: flooring, wall coverings, upholstery",
+      "Lighting modernization: marine LEDs, strips, indirect lighting",
+      "Ergonomic optimization: circulation, space usage, practical solutions",
+      "Creation of personalized atmospheres: classic, modern, premium, nautical"
+    ],
+    "syn": "We transform your boat interior into a comfortable, aesthetic space perfectly adapted to your needs."
+  },
+  {
+    "name": "Electricity & Electronics",
+    "title": "System Installation & Upgrades",
+    "image": "/img/elec.jpg",
+    "details": [
+      "Complete installation and upgrade of 12V, 24V, and 230V electrical networks",
+      "Integration of GPS, radars, fishfinders, VHF, AIS, complete navigation systems",
+      "Replacement or modernization of electrical panels and protection systems",
+      "Energy solutions: lithium batteries, chargers, solar panels",
+      "Cabling, connections, fuses, and cutoff devices inspection",
+      "Marine home automation solutions: lighting, remote control, sensors"
+    ],
+    "syn": "We modernize and secure your electrical and electronic systems for a connected, reliable, and intuitive navigation."
+  },
+  {
+    "name": "Stratification & Osmotic Treatment",
+    "title": "Hull Protection & Renovation",
+    "image": "/img/strat.jpg",
+    "details": [
+      "Repair of fiberglass, carbon, and composite structures",
+      "Reinforcement of sensitive areas: floors, bulkheads, aft panels",
+      "Complete osmotic treatment: stripping, controlled drying, epoxy resins, barriers",
+      "Gelcoat restoration: repairs, polishing, high-finish application",
+      "Durable moisture and corrosion protection",
+      "Technical hull inspection with moisture measurement and report"
+    ],
+    "syn": "We protect your hull using professional techniques ensuring durability and resistance."
+  },
+  {
+    "name": "Painting & Finishing",
+    "title": "Premium Aesthetic & Protection",
+    "image": "/img/paint.jpg",
+    "details": [
+      "Professional marine painting: hull, deck, superstructures",
+      "High-performance systems application (polyurethane, epoxy, Awlgrip…)",
+      "Aesthetic renovation: scratch removal, gelcoat repair, high-quality finishes",
+      "Customized color finishes: stripes, decorative bands, numbering",
+      "Marine varnishing for wood and sensitive surfaces"
+    ],
+    "syn": "We give your boat a renewed appearance and durable protection with high-end marine finishes."
+  },
+  {
+    "name": "Boat Transport",
+    "title": "Secure Transport Across Europe",
+    "image": "/img/transport.jpg",
+    "details": [
+      "Transport of all boat sizes: sailboats, catamarans, motorboats, semi-rigid boats",
+      "Professional handling: loading, lifting, securing, protections",
+      "Specialized road transport with certified drivers and adapted equipment",
+      "Complete document management: permits, insurance, itineraries, escorts",
+      "Door-to-door service throughout Europe",
+      "Real-time transport tracking for full peace of mind"
+    ],
+    "syn": "We guarantee reliable, organized, and secure transport with specialized equipment and experienced team."
+  },
+  {
+    "name": "Tire Mounting",
+    "title": "Fast & Professional Automotive Service",
+    "image": "/img/pneus.jpg",
+    "details": [
+      "Mounting and dismounting tires of all brands and sizes",
+      "High-precision balancing to eliminate vibration and abnormal wear",
+      "Complete inspection: pressure, wear, valves, rim condition",
+      "Seasonal tire change with personalized advice",
+      "Quick service by appointment or in workshop",
+      "Seasonal tire storage options"
+    ],
+    "syn": "Our workshop provides fast, reliable, and secure service for replacing your tires with confidence."
+  }
+]

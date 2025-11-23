@@ -1,0 +1,29 @@
+[
+    {
+      "id": "transport",
+      "title": "Transport",
+      "subtitle": "Transport de bateaux fiable, sûr et efficace",
+      "description": "Transport de bateau",
+      "advantages": [
+        "Équipements spécialisés pour le transport maritime",
+        "Itinéraires nationaux et internationaux",
+        "Options d’assurance incluses",
+        "Manipulation professionnelle et procédures de sécurité"
+      ],
+      "image": "/img/trans.jpg"
+    },
+    {
+      "id": "tire",
+      "title": "Montage de pneus",
+      "subtitle": "Installation rapide, sûre et professionnelle des pneus",
+      "description": "Service premium de montage de pneus",
+      "advantages": [
+        "Machines de montage haute précision",
+        "Équilibrage inclus",
+        "Compatible avec toutes les marques de pneus",
+        "Service rapide avec sécurité garantie"
+      ],
+      "image": "/img/tire.jpg"
+    }
+  ]
+  

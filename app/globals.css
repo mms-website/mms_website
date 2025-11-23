@@ -34,6 +34,10 @@
   -webkit-text-stroke: 1px var(--text-main-dark);
 }
 
+.dark .hollow-text {
+  -webkit-text-stroke: 1px var(--text-main-light);
+}
+
 .hollow-text-dark {
   color: transparent;
   -webkit-text-stroke: 1px var(--text-main-light);

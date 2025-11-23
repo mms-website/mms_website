@@ -40,8 +40,8 @@ const OpeningHoursPage = () => {
 
   return (
     <div className="flex relative justify-center bg-(--bg-main-light) dark:bg-(--bg-high-dark) z-10">
-      <main className="w-full md:w-2/3 p-4 flex flex-col gap-4 text-(--text-main-light) dark:text-(--text-main-dark)">
-        <h1 data-aos="fade-up" className="text-3xl font-bold font-myfont">{t('title')}</h1>
+      <main className="w-full md:w-2/3 p-4 flex flex-col gap-4 dark:text-(--text-main-dark)">
+        <h1 data-aos="fade-up" className="text-3xl md:text-5xl text-right font-bold font-myfont hollow-text-dark">{t('title')}</h1>
 
         {/* Description + Bouton sur la même ligne */}
         <div data-aos="fade-up" className="flex flex-wrap items-center gap-2">

@@ -3,7 +3,8 @@
     "home": "Home",
     "contact": "Contact",
     "service": "Services",
-    "tire": "Tires"
+    "tire": "Tires",
+    "openingHours": "Hopening hours"
   },
   "Home": {
     "title": "Missillac Marine Service",

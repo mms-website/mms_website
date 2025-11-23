@@ -42,10 +42,10 @@ const ContactPage = () => {
   const mapsQuery = encodeURIComponent(contact.address);
 
   return (
-    <div className="flex justify-center bg-(--bg-main-light) dark:bg-(--bg-high-dark) relative z-20">
-      <main className="w-full md:w-2/3 p-6 flex flex-col gap-4 text-(--text-main-light) dark:text-(--text-main-dark)">
+    <div className="flex justify-center bg-(--blue-main) relative z-20">
+      <main className="w-full md:w-2/3 p-6 flex flex-col gap-4 text-(--text-main-dark)">
         <h1 
-          className="text-3xl md:text-4xl font-bold font-myfont"
+          className="text-2xl md:text-5xl font-bold font-myfont hollow-text"
           data-aos="fade-up"
         >
           {t('title')}
@@ -57,7 +57,7 @@ const ContactPage = () => {
           {t('subtitle')}
         </h1>
         <p 
-          className="text-xs md:text-lg text-justify text-(--text-main-light) dark:text-(--text-main-dark)"
+          className="text-xs md:text-lg text-justify text-(--text-main-dark)"
           data-aos="fade-up"
         >
           {t('description')}
@@ -66,7 +66,7 @@ const ContactPage = () => {
         {/* Warning + bouton sur la même ligne */}
         <div
           data-aos="fade-up"
-          className="flex flex-wrap items-center text-xs md:text-lg text-(--text-main-light) dark:text-(--text-main-dark)"
+          className="flex flex-wrap items-center text-xs md:text-lg text-(--text-main-dark)"
         >
           <span className="mr-1">{t('warning')}</span>
           <button
@@ -82,11 +82,11 @@ const ContactPage = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 cursor-pointer">
           {/* Phone */}
           <div
             data-aos="fade-up"
-            className="flex items-center justify-between gap-2 p-4 rounded-lg bg-(--bg-high-light) dark:bg-(--bg-main-dark) hover:bg-(--text-main-light) dark:hover:bg-(--bg-highlight-dark) hover:text-(--bg-high-light) transition"
+            className="flex items-center justify-between gap-2 p-4 rounded-lg text-(--text-main-light) bg-(--bg-high-light) hover:bg-(--text-main-light) hover:text-(--bg-high-light) transition duration-100"
           >
             <a href={`tel:${contact.phone}`} className="flex items-center gap-2">
               <Phone className="w-6 h-6" />
@@ -105,7 +105,7 @@ const ContactPage = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="100"
-            className="flex items-center justify-between gap-2 p-4 rounded-lg bg-(--bg-high-light) dark:bg-(--bg-main-dark) hover:bg-(--text-main-light) dark:hover:bg-(--bg-highlight-dark) hover:text-(--bg-high-light) transition"
+            className="flex items-center justify-between gap-2 p-4 rounded-lg text-(--text-main-light) bg-(--bg-high-light) hover:bg-(--text-main-light) hover:text-(--bg-high-light) transition duration-100"
           >
             <a href={`mailto:${contact.email}`} className="flex items-center gap-2">
               <Mail className="w-6 h-6" />
@@ -124,7 +124,7 @@ const ContactPage = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="200"
-            className="flex items-center justify-between gap-2 p-4 rounded-lg bg-(--bg-high-light) dark:bg-(--bg-main-dark) hover:bg-(--text-main-light) dark:hover:bg-(--bg-highlight-dark) hover:text-(--bg-high-light) transition"
+            className="flex items-center justify-between gap-2 p-4 rounded-lg text-(--text-main-light) bg-(--bg-high-light) hover:bg-(--text-main-light) hover:text-(--bg-high-light) transition duration-100"
           >
             <a
               href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`}

@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: mms-website/mms_website
+  branch: main
+  auth_scope: repo
+  squash_merges: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+media_library:
+  name: uploadcare
+
+publish_mode: simple
+
+collections:
+  - name: "openingHours"
+    label: "Opening Hours"
+    files:
+      - file: "public/data/openingHours.json"
+        label: "Opening Hours"
+        name: "openingHours"
+        fields:
+          - name: "content"
+            label: "JSON Content"
+            widget: "json"

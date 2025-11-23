@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <!-- Charge Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+    <script>
+      window.CMS_MANUAL_INIT = true;
+
+      document.addEventListener("DOMContentLoaded", function () {
+        CMS.init({
+          config: "/admin/config.yml",
+          backend: {
+            name: "github",
+            repo: "mms-website/mms_website",
+            branch: "main",
+
+            /* 👇 IMPORTANT : ajouter ici ton Client ID GitHub */
+            app_id: "TOv23liYtQmk1G5FG6VKU",
+
+            /* 👇 Implicit Flow → pas besoin du Client Secret */
+            auth_type: "implicit",
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

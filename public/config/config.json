@@ -15,7 +15,7 @@
         "type": "contentBlock",
         "title": "Transports",
         "jsonDataPath": "/public/data/{langue}/transport.json",
-        "editableFields": [ "id", "title", "subtitle", "description", "longDescription", "advantages", "image"],
+        "editableFields": ["id", "title", "subtitle", "description", "longDescription", "advantages", "image"],
         "languages": ["en", "fr"],
         "enabled": true,
         "order": 1
@@ -27,7 +27,8 @@
         "jsonDataPath": "/public/data/contact.json",
         "editableFields": ["phone", "email", "address"],
         "enabled": true,
-        "order": 3
+        "order": 3,
+        "singleItem": true
       },
       {
         "id": "openingHours",

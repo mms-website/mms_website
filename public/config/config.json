@@ -26,6 +26,7 @@
         "title": "Contacts",
         "jsonDataPath": "/public/data/contact.json",
         "editableFields": ["phone", "email", "address"],
+        "singleItem": true,
         "enabled": true,
         "order": 3,
         "singleItem": true
@@ -36,7 +37,6 @@
         "title": "Horaires d'ouverture",
         "jsonDataPath": "/public/data/openingHours.json",
         "editableFields": ["day", "morning", "afternoon"],
-        "singleItem": true,
         "enabled": true,
         "order": 3
       }

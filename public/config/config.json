@@ -21,7 +21,7 @@
         "order": 1
       },
       {
-        "id": "contact",
+        "id": "contacts",
         "type": "repeater",
         "title": "Contacts",
         "jsonDataPath": "/public/data/contact.json",

@@ -1,45 +1,66 @@
 {
-    "sections": [
-      {
-        "id": "services",
-        "type": "banner",
-        "title": "Services",
-        "jsonDataPath": "/public/data/{langue}/services.json",
-        "editableFields": ["name", "title", "image", "location", "details", "syn"],
-        "languages": ["en", "fr"],
-        "enabled": true,
-        "order": 2
+  "sections": [
+    {
+      "id": "services",
+      "type": "banner",
+      "title": "Services",
+      "jsonDataPath": "/public/data/{langue}/services.json",
+      "editableFields": {
+        "name": "shortText",
+        "title": "shortText",
+        "image": "media",
+        "location": "shortText",
+        "details": "longText",
+        "syn": "shortText"
       },
-      {
-        "id": "transports",
-        "type": "contentBlock",
-        "title": "Transports",
-        "jsonDataPath": "/public/data/{langue}/transport.json",
-        "editableFields": ["id", "title", "subtitle", "description", "longDescription", "advantages", "image"],
-        "languages": ["en", "fr"],
-        "enabled": true,
-        "order": 1
+      "languages": ["en", "fr"],
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "id": "transports",
+      "type": "contentBlock",
+      "title": "Transports",
+      "jsonDataPath": "/public/data/{langue}/transport.json",
+      "editableFields": {
+        "id": "shortText",
+        "title": "shortText",
+        "subtitle": "shortText",
+        "description": "shortText",
+        "longDescription": "longText",
+        "advantages": "longText",
+        "image": "media"
       },
-      {
-        "id": "contacts",
-        "type": "repeater",
-        "title": "Contacts",
-        "jsonDataPath": "/public/data/contact.json",
-        "editableFields": ["phone", "email", "address"],
-        "singleItem": true,
-        "enabled": true,
-        "order": 3,
-        "singleItem": true
+      "languages": ["en", "fr"],
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "id": "contacts",
+      "type": "repeater",
+      "title": "Contacts",
+      "jsonDataPath": "/public/data/contact.json",
+      "editableFields": {
+        "phone": "shortText",
+        "email": "shortText",
+        "address": "longText"
       },
-      {
-        "id": "openingHours",
-        "type": "repeater",
-        "title": "Horaires d'ouverture",
-        "jsonDataPath": "/public/data/openingHours.json",
-        "editableFields": ["day", "morning", "afternoon"],
-        "enabled": true,
-        "order": 3
-      }
-    ]
-  }
-  
+      "singleItem": true,
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "id": "openingHours",
+      "type": "repeater",
+      "title": "Horaires d'ouverture",
+      "jsonDataPath": "/public/data/openingHours.json",
+      "editableFields": {
+        "day": "shortText",
+        "morning": "shortText",
+        "afternoon": "shortText"
+      },
+      "enabled": true,
+      "order": 4
+    }
+  ]
+}

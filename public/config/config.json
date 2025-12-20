@@ -36,6 +36,7 @@
         "title": "Horaires d'ouverture",
         "jsonDataPath": "/public/data/openingHours.json",
         "editableFields": ["day", "morning", "afternoon"],
+        "singleItem": true,
         "enabled": true,
         "order": 3
       }

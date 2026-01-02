@@ -1,8 +1,8 @@
 [
   {
     "id": "transport",
-    "title": "Transport modified",
-    "subtitle": "Reliable, safe & efficient boat moving modified",
+    "title": "Transport",
+    "subtitle": "Reliable, safe & efficient boat moving",
     "description": "Boat transport modified",
     "longDescription": "We handle the full logistics of transporting your boat, ensuring safety, precision, and compliance with all regulations. Whether you need to move it across the region or across the country, our specialized equipment and experienced team guarantee the best conditions.",
     "advantages": [
@@ -15,8 +15,8 @@
   },
   {
     "id": "tire",
-    "title": "Tire mounting modified",
-    "subtitle": "Fast, safe & professional tire installation modified",
+    "title": "Tire mounting",
+    "subtitle": "Fast, safe & professional tire installation",
     "description": "Premium tire mounting service",
     "longDescription": "We provide expert tire mounting for all types of vehicles. Our team uses professional-grade tools and follows strict safety procedures to ensure optimal performance and maximum durability for your tires.",
     "advantages": [
